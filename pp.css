@@ -1,0 +1,223 @@
+.headerbox {
+    padding: 2%;
+    background: navy;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: -20px;
+    width: 10px;
+    height: 30px;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes header {
+    form {
+        width: 10px;
+    }
+
+    to {
+        width: 1350px;
+    }
+
+
+
+}
+
+.li {
+    font-size: 25px;
+
+}
+
+.image {
+    height: auto;
+    width: 20%;
+    overflow: hidden;
+    border: 2px solid black;
+
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    transition: transform 2s;
+}
+
+.image:hover img {
+    transform: scale(1.2);
+}
+
+.h {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+
+
+
+}
+
+.sidebar {
+    padding: 2%;
+
+    width: 20vw;
+    height: 60vw;
+    background-color: aqua;
+}
+
+.slidebar nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 20%;
+
+}
+
+.main {
+
+    padding: 2%;
+    width: 80vw;
+    height: 60vw;
+    background-color: bisque;
+    padding: -10px;
+
+}
+
+.container {
+    display: flex;
+    margin: -20px;
+}
+
+
+.form {
+    background-color: pink;
+}
+
+.label {
+    font-size: larger;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+
+
+}
+
+.labelm {
+
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    color: #fff;
+
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-left: 15px;
+    height: 25px;
+
+}
+
+.reg {
+    height: auto;
+    width: 30%;
+    background-color: purple;
+    padding: 1%;
+    border-radius: 5%;
+    align-items: center;
+    margin-left: 33%;
+
+}
+
+.btn {
+    margin-left: 35%;
+    background-color: blue;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: solid;
+    border-radius: 40px;
+    box-shadow: 10px #4169E1;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 370px;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 370px;
+    margin-left: 300px;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px red;
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.popup button {
+    width: 100px;
+    margin-top: 50px;
+
+    padding: 10px 0;
+    background-color: yellow;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.containerabout {
+    background-color: bisque;
+
+
+}
+
+.PD {
+
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: #B0E0E6;
+    padding: 0%;
+}
+
+.pabout {
+    font-style: oblique;
+}
+
+.projectsD {
+    background-color: lightcoral;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: inherit;
+
+}

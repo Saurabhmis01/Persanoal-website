@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact </title>
+    <link rel="stylesheet" href="pp.css">
+</head>
+
+
+
+
+<style>
+    .h1 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+    }
+
+
+
+
+
+
+
+    @media only screen and (max-width : 500px) {
+        .form {
+            background-color: lightsalmon;
+            height: 600px;
+        }
+
+        .h1 {
+            text-align: center;
+            color: black;
+            font-size: 30px;
+        }
+
+        .input {
+            margin-left: 15px;
+            height: 20px;
+            width: 150px;
+
+        }
+
+        .reg {
+            height: 350px;
+            width: 70%;
+            background-color: purple;
+            padding: 1%;
+            border-radius: 5%;
+            align-items: center;
+            margin-left: 15%;
+
+        }
+    
+
+
+
+
+    .popup {
+        width: 200px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: 0px;
+        margin-left: 3px;
+        transform: translate(-50%, -50%) scale(0.1);
+        text-align: center;
+        padding: 5px;
+        visibility: hidden;
+        transition: transform 0.4s top 0.4s;
+    
+    }
+    .open-popup {
+        visibility: visible;
+        top: 310px;
+        transform: translate(-50%, -50%) scale(1);
+        left: 260px;
+    }
+
+
+    .popup img {
+        width: 50px;
+        margin-top: -25px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px red;
+    }
+
+    .popup h2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .popup button {
+        width: 50px;
+        margin-top: 25px;
+        padding: 5px 0;
+        background-color: yellow;
+        color: black;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+</style>
+
+
+
+
+
+
+<body class="form">
+    <h1 class="h1"><u>Contact with me </u> </h1>
+    <div>
+        <br>
+
+
+        <br>
+        <form>
+            <div class="reg">
+                <label class="label">Name</label>
+                <input type="text" id="username " class="input" placeholder="username">
+                <br><br>
+                <label class="label">E-mail</label>
+                <input type=" email" id="email" class="input" placeholder="email">
+                <br><br>
+                <label class=" label">Subject</label>
+                <input type="text" id="text" class="input" placeholder="Subject">
+                <br><br>
+                <label class="labelm">Message </label>
+                <textarea rows="7" cols="40">
+        </textarea>
+                <br><br><br><br>
+
+                <button class="btn" onclick="openpopup()"><b>Submit</b></button>
+
+                <div class="popup" id="popup">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACgCAMAAABXJiwcAAAAY1BMVEX///8RmlIAlkkAmE0AlEQAkj/8/v32+/nx+PTk8uqp1Lnq9e+53McAkTza7eLQ6Np6vpVPrHYwoV+bza/F4tGMxqNbsHwAiSRrt4hPqXCx2cE5o2Q/p2uAwJocnliSyagAjTL4clajAAAEJklEQVR4nO2b23qqMBCFyYEAgqCIbESUvv9T7oDWKkwitgHmYv7b6sdyrcxkCNTzCIIgCIIgCIIgCIIgCIIgCGIaYZqka2uwkx1K9u+4tgoLqiivnMu9WluIkTjJvzhjvArWVmJCbU5SMMZkGa4txUBQn3mnkPESadAqKbe9Qh00UhejUvBeIZMNzrUY7bZ3hViDVptc3hViLZesuZVK7yLKoKOLfCjUQcdr6wFIzo+YtcQzQonR/slElEEHB8bZk8QTPhfTp1rpJF7RSYzb55hRupjtJXuReMY21AZHIV4logs62/ts4GK0tqYB7Us5dxIZMolZMzCR8RyXRLUZmshEnq2t6oW44mIokaOqaFXwoYk6aFQSg93IRCYYqqDTfGSilojJRT1AjExEVi5xJQGJEpPEZNRxsK3F4OCPTdQSi7WF/RDtAROZ8PG4qMCcdbk4d1GF8S9vNi4CyFnvLolbgWnbML1DNIfP9/70JAGFTAi3LkZHLnsvhGTHD82sgb7d49bF5+1ByOqTeVkdx5tfj+9WYva6nOQHs146HLe/f6ljF8Nh35Dl1LiLM7gUtcbaqUTvMLKCt5O+aMxZSMcV7Y0bh7hOGVXiagubyJhjF70UuJLcTfje2VDPzN84lugdoCX19a62Vf0F56xbt2sX9SYB2SHfrMgA/NZNo3MXPW8HbrUn63lwVBrqWQft3kWDj8w6VCVXo8Q5XPS8I3g9eTB/Y2NoOW++9gdqcKcQjSnscGc0kclZXIR7j8Y3tMjIsPv1P2weFzWwRgk/XS6MXVH/rNkkeuCYr4do4KNqY+qKGj6fRK+GjeTjexFl7orvW+qfSGFr+CjsoLFInDHo7tIVHPbwhN22FKeOSr/mYLj2axtPrtagZ36Uml3h6z6HrVrgoOTno7MG3XMCLy/yn3Hc1rihpeueFm7L20dlW2YIjb/EizoRrJF/T7oFeAzxjaHbO0Y18Fo738JOgGPFpSUaZnG9IrtbJ9Waxxw2c+t+JoOv39VCuDPPEN1HLgtJ9OI9XNlNGJS2pahvzpZ7xaSFlch6/CTj5e9LvnpXGKTYWo7+62JB91xtdWHAvyz7LtHF7hgEn3BQ4BTDHYMFuVv6FZPQ0MbNEpddiz3tZ2FPORFyTvKRj8sH3fFR2Ku46BnOfTC5qMkmV/aSG+AA8EEQJLFaS6EOe1plrxZ0h2nPHkpcT6Ee0KZU9oprscN6UoIh6I73bXzdoDviHHfQPfDBz4/EhedFkMLaxhefF0FC62nE2uVyQ5nbuFj09spGYtIo5jxI/oz0bDjTxfSeDljZgleY3gKFHij5vEZRLQ+GZ96C50ds/+6SPZ96C+43Laa3F+8Uuc+FhnO5FWWC7b3zO/Wu1FSXTYZg6zMSaDDrIwiCIAiCIAiCIAiCIAiC+A3/Ac9lKUO0r7a2AAAAAElFTkSuQmCC"
+                        alt="Thank you">
+                    <h2> Thanking you </h2>
+                    <p> Thanks for contacting with me.</p>
+                    <button class="button" onclick="closepopup()">OK</button>
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="pp.js">
+    </script>
+</body>
+
+</html>
